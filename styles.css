@@ -1,0 +1,185 @@
+body {
+    background-color: rgb(0, 0, 18);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#name {
+    font-size: 60px;
+    /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+    /* background-image: linear-gradient(to right, #08007a, #337aff, #c800ff, #ff9ef5); */
+    /* background-image: linear-gradient(to right, #08007a, #337aff, #fee5a0, #337aff, #08007a); */
+    background-image: linear-gradient(to right, #08007a, #4686ff, #a600ff, #4686ff, #08007a);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: moveGradient 10s linear infinite;
+    margin: 0px;
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+@keyframes typewriter{
+    from { width: 0; }
+    to { width: 14em; }
+}
+
+
+#typewriter {
+    font-size: 2em;
+    overflow: hidden;
+    border-right: 0.15em solid white;  /* Updated cursor color */
+    white-space: nowrap;
+    margin: 0 auto;
+    display: inline-block;
+    animation: blinkTextCursor 1000ms steps(50) infinite normal;
+    text-align: center;
+    margin: 0;
+}
+
+/* @keyframes blinkTextCursor {
+    from { border-right-color: white; }
+    to { border-right-color: transparent; }
+} */
+
+@keyframes blinkTextCursor {
+    0%, 100% { border-right-color: white; }
+    50% { border-right-color: transparent; }
+}
+
+.centered {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Space between the image and the name-typewriter text block */
+    width:100%;
+}
+
+.profile-container > div {
+    display: flex;
+    flex-direction: column; /* Stack name and typewriter text vertically */
+    align-items: center; /* Center-align the text block (name and typewriter) */
+    gap: 20px; /* Space between the name and the typewriter text */
+    width: 100%;
+    text-align: left;
+}
+
+/* .profile-container > div {
+    align-items: flex-start;
+    text-align: left;
+} */
+
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-section {
+    max-width: 650px; /* Limit the width for better readability */
+    margin-top: 0px; 
+    padding: 20px; /* Add some padding inside the text section */
+    /* margin-left:auto;
+    margin-right:auto; */
+    /* color: #fff;  */
+    text-align: left; /* Align text to the left */
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6; /* Improve line spacing for readability */
+}
+
+a {
+    color: #1e66d4; 
+    color: #fff; 
+    text-decoration: underline; /* This underlines the hyperlink */
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+li {
+    font-size: 18px;
+    line-height: 1.8; /* Improve line spacing for readability */ 
+} 
+
+.button{
+    margin :10px;
+    padding : 10px;
+    border-width: 1px;
+    background-color: rgb(0, 0, 18);
+    color:#fff;
+    border-color: #fff;
+    font-weight: bold;
+}
+
+.light-mode{
+    color :#000;
+    background-color: #fff;
+}
+.light-mode .button{
+    color : #000;
+    background-color: #fff;
+    border-color: #000;
+}
+.light-mode a{
+    color : #000;
+}
+
+.change-theme-container {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 1000;
+}
+
+#theme-toggle {
+    color: #fff; /* White text for visibility */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 16px;
+    background-color: #333; /* Dark background for contrast */
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#theme-toggle:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    color: #ddd; /* Slightly lighter text on hover */
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #fff; /* Light background for light mode */
+        color: #000; /* Dark text for light mode */
+    }
+    a {
+        color : #000;
+    }
+
+    /* Define other light mode styles here */
+}
