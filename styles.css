@@ -183,6 +183,9 @@ li {
     a {
         color : #000;
     }
+    #typewriter {
+        border-right: 0.15em solid black; /* Black cursor for light mode */
+    }
 
     /* Define other light mode styles here */
 }
