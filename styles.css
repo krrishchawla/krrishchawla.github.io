@@ -12,19 +12,21 @@ body {
     padding-bottom: 50px;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 #name {
     font-size: 60px;
-    /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
-    /* background-image: linear-gradient(to right, #08007a, #337aff, #c800ff, #ff9ef5); */
-    /* background-image: linear-gradient(to right, #08007a, #337aff, #fee5a0, #337aff, #08007a); */
     background-image: linear-gradient(to right, #08007a, #4686ff, #a600ff, #4686ff, #08007a);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    animation: moveGradient 10s linear infinite;
+    animation: moveGradient 10s linear infinite, fadeIn 2s ease-out forwards;
     margin: 0px;
+    opacity: 0; /* Start with 0 opacity */
 }
 
 @keyframes moveGradient {
@@ -47,7 +49,7 @@ body {
     white-space: nowrap;
     margin: 0 auto;
     display: inline-block;
-    animation: blinkTextCursor 1000ms steps(50) infinite normal;
+    animation: blinkTextCursor 1000ms steps(50) infinite normal, fadeIn 2s ease-out forwards;
     text-align: center;
     margin: 0;
 }
@@ -106,6 +108,7 @@ body {
     margin-right:auto; */
     /* color: #fff;  */
     text-align: left; /* Align text to the left */
+    animation: fadeIn 2s ease-out forwards;
 }
 
 .text-section p {
@@ -182,4 +185,35 @@ li {
     }
 
     /* Define other light mode styles here */
+}
+
+
+
+
+/* Responsive adjustments for screens smaller than 768px (like mobile devices) */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center;
+    }
+
+    #profile-pic {
+        width: 150px; /* Smaller image size */
+        height: 150px;
+    }
+
+    .text-section {
+        max-width: 100%; /* Full width on small screens */
+        padding: 30px; /* Less padding */
+    }
+
+    #name {
+        font-size: 50px; /* Smaller font size */
+    }
+
+    #typewriter {
+        font-size: 1.8em; /* Smaller typewriter text */
+    }
+
+    /* Add any additional responsive styles here */
 }
