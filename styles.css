@@ -213,7 +213,7 @@ li {
 
     .text-section {
         max-width: 100%; /* Full width on small screens */
-        padding: 30px; /* Less padding */
+        padding: 25px; /* Less padding */
     }
 
     #name {
