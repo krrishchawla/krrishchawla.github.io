@@ -54,13 +54,13 @@ body {
     margin: 0;
 }
 
-/* @keyframes blinkTextCursor {
-    from { border-right-color: white; }
-    to { border-right-color: transparent; }
-} */
-
 @keyframes blinkTextCursor {
-    0%, 100% { border-right-color: white; }
+    0%, 100% { border-right-color: solid white; }
+    50% { border-right-color: transparent; }
+}
+
+@keyframes blinkTextCursorLight {
+    0%, 100% { border-right-color: solid black; }
     50% { border-right-color: transparent; }
 }
 
@@ -215,8 +215,8 @@ li {
     }
 
     #typewriter {
-        font-size: 1.8em; /* Smaller typewriter text */
+        /* Adjust the keyframes to have a black cursor */
+        animation: blinkTextCursorLight 1000ms steps(50) infinite normal;
     }
 
-    /* Add any additional responsive styles here */
 }
