@@ -19,7 +19,9 @@ body {
 
 #name {
     font-size: 60px;
-    background-image: linear-gradient(to right, #08007a, #4686ff, #a600ff, #4686ff, #08007a);
+    /* background-image: linear-gradient(to right, #08007a, #4686ff, #a600ff, #4686ff, #08007a); */
+    /* background-image: linear-gradient(to right, #08007a, #4686ff, #eac58e, #4686ff, #08007a); */
+    background-image: linear-gradient(to right, #08007a, #4686ff, #00bbff, #4686ff, #08007a);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
@@ -101,7 +103,7 @@ body {
 }
 
 .text-section {
-    max-width: 650px; /* Limit the width for better readability */
+    max-width: 750px; /* Limit the width for better readability */
     margin-top: 0px; 
     padding: 20px; /* Add some padding inside the text section */
     /* margin-left:auto;
@@ -112,7 +114,7 @@ body {
 }
 
 .text-section p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6; /* Improve line spacing for readability */
 }
 
@@ -122,12 +124,13 @@ a {
     text-decoration: underline; /* This underlines the hyperlink */
 }
 
-h2 {
-    text-decoration: underline;
-}
+/* h2 {
+    margin-bottom: 0px;
+    padding-bottom:0px;
+} */
 
 li {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8; /* Improve line spacing for readability */ 
 } 
 
@@ -186,6 +189,9 @@ li {
     #typewriter {
         border-right: 0.15em solid black; /* Black cursor for light mode */
     }
+    /* #name {
+        background-image: linear-gradient(to right, #000000, #464646, #3c83fd, #464646, #000000);
+    } */
 
     /* Define other light mode styles here */
 }
