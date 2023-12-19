@@ -78,7 +78,7 @@ body {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
     justify-content: center; /* Centers items horizontally */
-    /* gap: 10px; Space between the image and the name-typewriter text block */
+    gap: 20px; /* Space between the image and the name-typewriter text block */
     width:100%;
     /* background-color: white; */
     padding-left: 20px;
@@ -168,6 +168,7 @@ li {
     .profile-container {
         flex-direction: column; /* Stack elements vertically on small screens */
         align-items: center;
+        padding-left: 0px;
     }
 
     #profile-pic {
