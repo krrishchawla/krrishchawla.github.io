@@ -21,7 +21,7 @@ body {
     font-size: 60px;
     /* background-image: linear-gradient(to right, #08007a, #4686ff, #a600ff, #4686ff, #08007a); */
     /* background-image: linear-gradient(to right, #08007a, #4686ff, #eac58e, #4686ff, #08007a); */
-    background-image: linear-gradient(to right, #08007a, #4686ff, #00bbff, #4686ff, #08007a);
+    background-image: linear-gradient(to right, #08007a, #4686ff, #4ec1ff, #4686ff, #08007a);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
