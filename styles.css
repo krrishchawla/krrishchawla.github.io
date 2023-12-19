@@ -17,6 +17,18 @@ body {
     to { opacity: 1; }
 }
 
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #name {
     font-size: 60px;
     /* background-image: linear-gradient(to right, #08007a, #4686ff, #a600ff, #4686ff, #08007a); */
@@ -116,9 +128,13 @@ body {
 }
 
 a {
-    color: #1e66d4; 
+    /* color: #1e66d4;  */
     color: #fff; 
     text-decoration: underline; /* This underlines the hyperlink */
+}
+
+a:hover {
+    color:#1e66d4
 }
 
 /* h2 {
