@@ -80,10 +80,6 @@ body {
     justify-content: center; /* Centers items horizontally */
     gap: 20px; /* Space between the image and the name-typewriter text block */
     width:100%;
-    /* background-color: white; */
-    /* padding-left: 25px; */
-    /* padding-right :20px; */
-    background-color: grey;
 }
 
 .profile-container > div {
@@ -93,7 +89,6 @@ body {
     gap: 20px; /* Space between the name and the typewriter text */
     width: 100%;
     text-align: left;
-    
 }
 
 /* .profile-container > div {
@@ -111,13 +106,8 @@ body {
 .text-section {
     max-width: 740px; /* Limit the width for better readability */
     margin-top: 10px; 
-    /* margin: 20px;  */
-    /* margin-left:auto;
-    margin-right:auto; */
-    /* color: #fff;  */
     text-align: left; /* Align text to the left */
     animation: fadeIn 2s ease-out forwards;
-    background-color: grey;
 }
 
 .text-section p {
