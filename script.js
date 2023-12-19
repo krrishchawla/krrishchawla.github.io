@@ -2,9 +2,9 @@ const phrases = ["an AI enthusiast.", "a developer.", "an innovator."];
 let currentPhraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const typingDelay = 200;
+const typingDelay = 150;
 const erasingDelay = 100;
-const newTextDelay = 600; // Delay between current and next text
+const newTextDelay = 1200; // Delay between current and next text
 let textPrefix = "I am ";
 
 function typeEffect() {

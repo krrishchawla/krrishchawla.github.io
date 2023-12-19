@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 0, 18);
+    background-color: rgb(0, 0, 16);
     color: #fff;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -21,12 +21,13 @@ body {
     font-size: 60px;
     /* background-image: linear-gradient(to right, #08007a, #4686ff, #a600ff, #4686ff, #08007a); */
     /* background-image: linear-gradient(to right, #08007a, #4686ff, #eac58e, #4686ff, #08007a); */
-    background-image: linear-gradient(to right, #08007a, #4686ff, #4ec1ff, #4686ff, #08007a);
+    /* background-image: linear-gradient(to right, #08007a, #4686ff, #43cea2 , #4686ff, #08007a); */
+    background-image: linear-gradient(to right, #01238b, #337aff, #43cea2 , #337aff, #01238b);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    animation: moveGradient 10s linear infinite, fadeIn 2s ease-out forwards;
+    animation: moveGradient 20s linear infinite, fadeIn 2s ease-out forwards;
     margin: 0px;
     opacity: 0; /* Start with 0 opacity */
 }
@@ -47,7 +48,7 @@ body {
 #typewriter {
     font-size: 2em;
     overflow: hidden;
-    border-right: 0.15em solid white;  /* Updated cursor color */
+    border-right: 0.1em solid white;  /* Updated cursor color */
     white-space: nowrap;
     margin: 0 auto;
     display: inline-block;
@@ -144,19 +145,21 @@ li {
     font-weight: bold;
 }
 
-.light-mode{
-    color :#000;
-    background-color: #fff;
+/* .light-mode{
+    color :#333;
+    background-color: #fbfbfb;
 }
 .light-mode .button{
-    color : #000;
-    background-color: #fff;
+    color : #333;
+    background-color: #fbfbfb;
     border-color: #000;
 }
 .light-mode a{
-    color : #000;
-}
+    color : #333;
+} */
 
+
+/* 
 .change-theme-container {
     position: fixed;
     top: 50px;
@@ -165,33 +168,31 @@ li {
 }
 
 #theme-toggle {
-    color: #fff; /* White text for visibility */
-    text-decoration: none; /* Removes underline from the link */
+    color: #fff; 
+    text-decoration: none;
     font-size: 16px;
-    background-color: #333; /* Dark background for contrast */
+    background-color: #333; 
     padding: 8px 15px;
     border-radius: 5px;
 }
 
 #theme-toggle:hover {
-    background-color: #555; /* Slightly lighter background on hover */
-    color: #ddd; /* Slightly lighter text on hover */
-}
+    background-color: #555; 
+    color: #ddd; 
+} */
+
 
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #fff; /* Light background for light mode */
+        background-color: #fbfbfb; /* Light background for light mode */
         color: #000; /* Dark text for light mode */
     }
     a {
         color : #000;
     }
     #typewriter {
-        border-right: 0.15em solid black; /* Black cursor for light mode */
+        border-right: 0.1em solid #000; /* Black cursor for light mode */
     }
-    /* #name {
-        background-image: linear-gradient(to right, #000000, #464646, #3c83fd, #464646, #000000);
-    } */
 
     /* Define other light mode styles here */
 }
