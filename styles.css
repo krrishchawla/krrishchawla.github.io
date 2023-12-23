@@ -1,3 +1,6 @@
+
+
+
 body {
     background-color: rgb(0, 0, 16);
     /* background-color: #070607; */
@@ -125,7 +128,7 @@ body {
 
 .text-section p {
     font-size: 16px;
-    line-height: 1.6; /* Improve line spacing for readability */
+    line-height: 1.7; /* Improve line spacing for readability */
 }
 
 a {
