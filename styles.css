@@ -229,3 +229,70 @@ li {
     }
 
 }
+
+
+
+
+
+.ring {
+    margin: 75px;
+    position: relative;
+    width: 200px; 
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.ring i {
+    position: absolute;
+    inset: 0;
+    border: 1px solid #999;
+    transition: 0.5s;
+}
+
+.ring i:nth-child(1) {
+    border-radius: 28% 62% 63% 37% / 41% 44% 56% 59%; 
+    animation: animate 10s linear infinite;
+}
+
+.ring i:nth-child(2) {
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate2 6s linear infinite;
+}
+
+.ring i:nth-child(3){
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%; 
+    animation: animate2 4s linear infinite;
+}
+
+.ring:hover i {
+    border: 3px solid var(--clr);
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+.ring p{
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
