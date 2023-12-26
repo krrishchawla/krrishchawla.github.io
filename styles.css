@@ -44,7 +44,7 @@ body {
     /* background-image: linear-gradient(to right, #08007a, #4686ff, #a600ff, #4686ff, #08007a); */
     /* background-image: linear-gradient(to right, #08007a, #4686ff, #eac58e, #4686ff, #08007a); */
     /* background-image: linear-gradient(to right, #08007a, #4686ff, #43cea2 , #4686ff, #08007a); */
-    background-image: linear-gradient(to right, #01238b, #337aff, #43cea2 , #337aff, #01238b);
+    background-image: linear-gradient(45deg, #01238b, #337aff, #43cea2 , #337aff, #01238b);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
