@@ -151,7 +151,7 @@ a:hover {
 li {
     /* font-size: 16px; */
     font-size: 1.1em;
-    line-height: 2; /* Improve line spacing for readability */ 
+    line-height: 1.9em; /* Improve line spacing for readability */ 
 } 
 
 .button{
@@ -209,6 +209,7 @@ li {
 
     .text-section #social-links{
         text-align: center; /* Center the social links */
+        margin-bottom: 25px;
     }
 
     #name {
