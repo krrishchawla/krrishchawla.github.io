@@ -120,7 +120,7 @@ body {
 
 
 .text-section {
-    max-width: 740px; /* Limit the width for better readability */
+    max-width: 800px; /* Limit the width for better readability */
     margin-top: 20px; 
     text-align: left; /* Align text to the left */
     animation: fadeIn 2s ease-out forwards;
@@ -128,7 +128,7 @@ body {
 
 .text-section p {
     /* font-size: 16px; */
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.7; /* Improve line spacing for readability */
 }
 
@@ -150,7 +150,7 @@ a:hover {
 
 li {
     /* font-size: 16px; */
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 2; /* Improve line spacing for readability */ 
 } 
 
@@ -200,6 +200,11 @@ li {
         padding-left: 25px; 
         padding-right: 25px; 
         margin-top: 10px;
+    }
+
+    .text-section p {
+        font-size: 1.1em;
+        line-height: 1.9em;
     }
 
     .text-section #social-links{
