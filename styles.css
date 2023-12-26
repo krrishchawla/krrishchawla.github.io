@@ -256,17 +256,17 @@ li {
 
 .ring i:nth-child(1) {
     border-radius: 28% 62% 63% 37% / 41% 44% 56% 59%; 
-    animation: animate 10s linear infinite;
+    animation: animate 20s linear infinite;
 }
 
 .ring i:nth-child(2) {
     border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
-    animation: animate2 6s linear infinite;
+    animation: animate2 15s linear infinite;
 }
 
 .ring i:nth-child(3){
     border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%; 
-    animation: animate2 4s linear infinite;
+    animation: animate2 10s linear infinite;
 }
 
 /* .ring i {
