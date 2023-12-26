@@ -1,7 +1,7 @@
 body {
     /* background-color: rgb(0, 0, 16); */
     background-color: #060b14;
-    color: #fff;
+    color: #cecece;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
@@ -73,6 +73,7 @@ body {
     display: inline-block;
     animation: blinkTextCursor 1000ms steps(50) infinite normal, fadeIn 2s ease-out forwards;
     text-align: center;
+    color: #fff;
     /* margin: 0; */
 }
 
@@ -135,7 +136,11 @@ body {
 a {
     /* color: #1e66d4;  */
     color: #fff; 
-    text-decoration: underline; /* This underlines the hyperlink */
+    text-decoration: underline;
+}
+
+h2 {
+    color: #fff
 }
 
 a:hover {
@@ -168,13 +173,17 @@ li {
 @media (prefers-color-scheme: light) {
     body {
         background-color: #fbfbfb; /* Light background for light mode */
-        color: #000; /* Dark text for light mode */
+        color: #4b4b4b; /* Dark text for light mode */
     }
     a {
         color : #000;
     }
+    h2 {
+        color: #000
+    }
     #typewriter {
         border-right: 0.1em solid #000; /* Black cursor for light mode */
+        color: #000
     }
     #profile-pic {
         box-shadow: 0 0 50px 3px #d8e4ff; 
