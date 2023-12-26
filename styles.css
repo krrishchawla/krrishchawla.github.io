@@ -5,7 +5,6 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,9 +17,6 @@ body {
 
 }
 
-/* h1 {
-    font-size: 60px;
-} */
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -128,13 +124,11 @@ body {
 }
 
 .text-section p {
-    /* font-size: 16px; */
     font-size: 1.1em;
     line-height: 1.7; /* Improve line spacing for readability */
 }
 
 a {
-    /* color: #1e66d4;  */
     color: #fff; 
     text-decoration: underline;
 }
@@ -154,7 +148,6 @@ a:hover {
 } */
 
 li {
-    /* font-size: 16px; */
     font-size: 1.1em;
     line-height: 1.9em; /* Improve line spacing for readability */ 
 } 
