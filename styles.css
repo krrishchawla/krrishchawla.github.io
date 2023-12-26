@@ -231,70 +231,52 @@ li {
 }
 
 
-
-
-
 .ring {
     margin: 75px;
     position: relative;
-    width: 200px; 
-    height: 200px; 
+    width: 175px; 
+    height: 175px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
 }
 
-.ring i {
+.ring1, .ring2 {
     position: absolute;
     inset: 0;
-    border: 1px solid #999;
-    transition: 0.5s;
-    border: 3px solid var(--clr);
-    filter: drop-shadow(0 0 25px var(--clr));
+    border-radius: 40%;
+    animation-timing-function: ease-in-out;
 }
 
-.ring i:nth-child(1) {
-    border-radius: 28% 62% 63% 37% / 41% 44% 56% 59%; 
+.ring1 {
+    border: 3px solid #337aff;
+    border-radius: 41% 71% 57% 35% / 38% 51% 64% 49%; 
     animation: animate 20s linear infinite;
 }
 
-.ring i:nth-child(2) {
-    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+.ring2 {
+    border: 3px solid #01238b;
     animation: animate2 15s linear infinite;
 }
 
-.ring i:nth-child(3){
-    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%; 
-    animation: animate2 10s linear infinite;
-}
-
-/* .ring i {
-    border: 3px solid var(--clr);
-    filter: drop-shadow(0 0 25px var(--clr));
-} */
-
-.ring p{
+.ring p {
     font-size: 0.9em;
     line-height: 1.5;
     margin: 0;
 }
 
+.ring a {
+    position: relative;
+    z-index: 10;
+}
 
 @keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
 }
 
 @keyframes animate2 {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform:rotate(0deg);
-    }
+    from {transform: rotate(360deg)}
+    to {transform: rotate(0deg)}
 }
