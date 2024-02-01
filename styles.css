@@ -129,11 +129,11 @@ body {
 
 
 #profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 5px;
     object-fit: cover;
-    box-shadow: 0 0 50px 3px #0c2147; 
+    box-shadow: 0 0 150px 1px #082146; 
 }
 
 
@@ -229,7 +229,7 @@ li {
     }
 
     .text-section p {
-        /* font-size: 1.1em; */
+        font-size: 1.1em;
         line-height: 1.8em;
     }
 
