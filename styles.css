@@ -304,3 +304,12 @@ li {
     from {transform: rotate(360deg)}
     to {transform: rotate(0deg)}
 }
+
+.dot {
+    height: 10px; /* Size of the dot */
+    width: 10px; /* Size of the dot */
+    background-color: #2fff00; /* Color of the dot */
+    border-radius: 50%; /* Makes the dot round */
+    display: inline-block;
+    margin-left: 5px; /* Space between the word 'New' and the dot */
+  }
